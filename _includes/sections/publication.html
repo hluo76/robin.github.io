@@ -27,6 +27,42 @@
     </div>
     <body>
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  
+      <tr onmouseout="lssr_stop()" onmouseover="lssr_start()" bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="badge">NeurIPS 2026</div>
+                <img src='images/oasis.png' width="480">
+              </div>
+              <script type="text/javascript">
+                function lssr_start() {
+                  document.getElementById('lssr_image').style.opacity = "1";
+                }
+
+                function lssr_stop() {
+                  document.getElementById('lssr_image').style.opacity = "0";
+                }
+                lssr_stop()
+              </script>
+            </td>
+
+
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2605.17887">
+                <papertitle>Attention Sinks and Outliers in Attention Residuals</papertitle>
+              </a>
+              <br>
+              <strong>Haozheng Luo*</strong>, Haoran Dai*, Jingyuan Huang*, Shaoyang Zhang, Xi Chen, Eric Hanchen Jiang, Yijiang Li, Chenghao Qiu, Chenwei Xu, Zhenyu Pan, Haotian Zhang, Binghui Wang, Yan Chen
+              <em>  Advances in Neural Information Processing Systems 40 (NeurIPS) 2026 
+              <br>
+              <a href="https://arxiv.org/abs/2605.17887">paper</a> /
+              <a href="https://github.com/robinzixuan/OASIS">code</a> 
+              <p></p>
+              <p>
+                 We propose OASIS, an outlier- and sink-aware method that introduces Softmax1-based null routing and inter-layer null signaling to mitigate the attention sinks and activation outliers amplified by AttnResidual’s dual-normalization design. Across three datasets and five baselines, OASIS reduces maximum infinity norm and kurtosis by 9.26% and 2.60%, respectively, while lowering W8A8 perplexity by 75.85% and improving W4A4 GSM8K Pass@1 by 12.42%.
+              </p>
+            </td>
+          </tr> 
 
 
       <tr onmouseout="lssr_stop()" onmouseover="lssr_start()" bgcolor="#ffffd0">
@@ -49,20 +85,57 @@
 
 
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://openreview.net/forum?id=p5zaXPgMvh">
-                <papertitle>Knowledge‑Distilled Memory Editing for Plug‑and‑Play LLM Alignment</papertitle>
+              <a href="https://openreview.net/forum?id=6EJ27eMSBB">
+                <papertitle>Decoupled Alignment for Robust Plug-and-Play Adaptation</papertitle>
               </a>
               <br>
               <strong>Haozheng Luo*</strong>, Jiahao Yu*, Wenxin Zhang*, Jialong Li, Chenghao Qiu, Yimin Wang, Eric Hanchen Jiang, Jerry Yao-Chieh Hu, Yan Chen, Binghui Wang, Xinyu Xing, Han Liu
               <br>
               <em>  Conference on Language Modeling (COLM) 2026 
               <br>
-              <a href="https://arxiv.org/abs/2406.01514">paper</a> /
+              <a href="https://openreview.net/forum?id=6EJ27eMSBB">paper</a> /
               <a href="https://github.com/MAGICS-LAB/DAPA">code</a> 
               <p></p>
               <p>
                  We propose a low-resource method to align LLMs for safety by distilling alignment-relevant knowledge from well-aligned models and identifying essential components via delta debugging, enabling plug-and-play integration into unaligned LLMs.
  
+              </p>
+            </td>
+          </tr> 
+
+        <tr onmouseout="lssr_stop()" onmouseover="lssr_start()" bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="badge">EMNLP 2026</div>
+                <img src='images/BaSE.png' width="480">
+              </div>
+              <script type="text/javascript">
+                function lssr_start() {
+                  document.getElementById('lssr_image').style.opacity = "1";
+                }
+
+                function lssr_stop() {
+                  document.getElementById('lssr_image').style.opacity = "0";
+                }
+                lssr_stop()
+              </script>
+            </td>
+
+
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2605.29268">
+                <papertitle>Compute Allocation in Evolutionary Search: From Depth-Breadth to Multi-Armed Bandits</papertitle>
+              </a>
+              <br>
+              Sixue Xing*, Haoyu He*, Kerui Wu*, Zhuo Yang, <strong>Haozheng Luo</strong>, Tianfan Fu, Aarthy Nagarajan
+              <br>
+              <em>  Conference on Empirical Methods in Natural Language Processing (EMNLP) 2026
+              <br>
+              <a href="https://arxiv.org/abs/2605.29268">paper</a> /
+                <a href="https://github.com/keruiwu/self-evolving-allocation">code</a>  
+              <p></p>
+              <p>
+            BaSE improves the reliability and mean performance of LLM-guided evolutionary search by using a multi-armed bandit to dynamically allocate a fixed LLM-call budget across parallel search trajectories, yielding a 12.3% average fitness gain over strong island-based baselines. 
               </p>
             </td>
           </tr> 
@@ -87,7 +160,7 @@
 
 
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://openreview.net/forum?id=p5zaXPgMvh">
+              <a href="https://openreview.net/forum?id=QTehV2Qncq">
                 <papertitle>Agent Q-Mix: Selecting the Right Action for LLM Multi-Agent Systems through Reinforcement Learning</papertitle>
               </a>
               <br>
@@ -95,7 +168,7 @@
               <br>
               <em>  Conference on Language Modeling (COLM) 2026 
               <br>
-              <a href="https://arxiv.org/abs/2604.00344">paper</a> /
+              <a href="https://openreview.net/forum?id=QTehV2Qncq">paper</a> /
                 <a href="https://github.com/ericjiang18/Agent-Q-Mix">code</a> 
               <p></p>
               <p>
@@ -124,7 +197,7 @@
             </td>
 
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2603.17305">
+              <a href="https://openreview.net/forum?id=56cQPBIg4R">
                 <papertitle>Contrastive Reasoning Alignment: Reinforcement Learning from Hidden Representations</papertitle>
               </a>
               <br>
@@ -161,7 +234,7 @@
             </td>
 
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2510.01586">
+              <a href="https://openreview.net/forum?id=5D3ZblXmW2">
                 <papertitle>AdvEvo-MARL: Shaping Internalized Safety through Adversarial Co-Evolution in Multi-Agent Reinforcement Learning</papertitle>
               </a>
               <br>
@@ -169,7 +242,7 @@
               <br>
               <em>International Conference on Machine Learning (ICML) 2026
               <br>
-              <a href="https://arxiv.org/abs/2510.01586">paper</a> 
+              <a href="https://openreview.net/forum?id=5D3ZblXmW2">paper</a> 
               <p></p>
               <p>
                 <b>AdvEvo-MARL</b> is a co-evolutionary multi-agent reinforcement learning framework that embeds safety directly into task agents by jointly training attackers and defenders with group-level advantage estimation, reducing jailbreak success while maintaining or improving task performance without relying on external guard modules.
@@ -197,7 +270,7 @@
             </td>
 
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://openreview.net/forum?id=oyUiJmkD7H">
+              <a href="https://openreview.net/forum?id=a9dngZLqGS">
                 <papertitle>FROST: Filtering Reasoning Outliers with Attention for Efficient Reasoning</papertitle>
               </a>
               <br>
@@ -236,7 +309,7 @@
 
 
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://openreview.net/forum?id=DCvCv02uNf">
+              <a href="https://openreview.net/forum?id=1v0ULVJOZ9">
                 <papertitle>RHYTHM: Reasoning with Hierarchical Temporal Tokenization for Human Mobility</papertitle>
               </a>
               <br>
@@ -409,7 +482,41 @@
             </td>
           </tr> 
 
-    
+    <tr onmouseout="lssr_stop()" onmouseover="lssr_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+
+                <img src='images/st.png' width="480">
+              </div>
+              <script type="text/javascript">
+                function lssr_start() {
+                  document.getElementById('lssr_image').style.opacity = "1";
+                }
+
+                function lssr_stop() {
+                  document.getElementById('lssr_image').style.opacity = "0";
+                }
+                lssr_stop()
+              </script>
+            </td>
+
+
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://dl.acm.org/doi/10.1145/3681771.3699910">
+                <papertitle>ST-MoE-BERT: A Spatial-Temporal Mixture-of-Experts Framework for Long-Term Cross-City Mobility Prediction</papertitle>
+              </a>
+              <br>
+              Haoyu He, <strong>Haozheng Luo</strong>, Qi R. Wang
+              <br>
+              <em> 2nd ACM SIGSPATIAL International Workshop on the Human Mobility Prediction Challenge/ 🏆 Top-1 in DTW Score Prediction
+              <br>
+              <a href="https://dl.acm.org/doi/10.1145/3681771.3699910">paper</a>
+              <p></p>
+              <p>
+              ST-MoE-BERT integrates Mixture-of-Experts, BERT, and transfer learning to model cross-city spatial-temporal mobility as a classification task, achieving an average 8.29% improvement over state-of-the-art methods on GEO-BLEU and DTW. 
+              </p>
+            </td>
+          </tr> 
     
     <tr onmouseout="lssr_stop()" onmouseover="lssr_start()" bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
